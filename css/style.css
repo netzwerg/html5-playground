@@ -1,72 +1,53 @@
 #scene {
-    margin-top: 100px;
-    -webkit-perspective: 800;
-    -webkit-perspective-origin: 50% -100px;
+    margin-left: 200px;
+    -webkit-perspective: 1200;
+    -webkit-perspective-origin: 80% -100px;
 }
 
 #cube {
     position: relative;
     margin: 0 auto;
-    height: 200px;
-    width: 200px;
+    height: 800px;
+    width: 800px;
     -webkit-transition: -webkit-transform 1s linear;
     -webkit-transform-style: preserve-3d;
 }
 
 .face {
-    position: absolute;
-    height: 170px;
-    width: 170px;
+    display: inline;
+    float: left;
+    border: 5px;
     border-style: solid;
-    border-width: 5px;
     border-color: black;
-    padding: 10px;
+    height: 190px;
+    width: 190px;
     background-color: rgba(200, 10, 190, 0.4);
 }
 
-#cube .one  {
-    -webkit-transform: rotateX(90deg) translateZ(100px);
+.hidden {
+    visibility: hidden;
 }
 
-#cube .two {
-    -webkit-transform: translateZ(100px);
+.left {
+    -webkit-transform: rotateY(90deg);
+    -webkit-transform-origin: center right;
 }
 
-#cube .three {
-    -webkit-transform: rotateY(90deg) translateZ(100px);
+.right {
+    -webkit-transform: rotateY(-90deg);
+    -webkit-transform-origin: center left;
+}
+.front {
+    -webkit-transform: translateX(-400px) translateZ(200px);
 }
 
-#cube .four {
-    -webkit-transform: rotateY(180deg) translateZ(100px);
+.top {
+    -webkit-transform: rotateX(-90deg);
+    -webkit-transform-origin: bottom center;
 }
 
-#cube .five {
-    -webkit-transform: rotateY(-90deg) translateZ(100px);
+.bottom {
+    -webkit-transform: rotateX(90deg);
+    -webkit-transform-origin: top center;
 }
 
-#cube .six {
-    -webkit-transform: rotateX(-90deg) translateZ(100px) rotate(180deg);
-}
-
-#grid {
-    position: relative;
-    z-index: -1;
-    margin: 0 auto;
-    height: 600px;
-    width: 600px;
-    -webkit-transform: rotateX(90deg) translateZ(300px);
-    -webkit-transform-style: preserve-3d;
-}
-
-.row {
-    float: left;
-}
-
-.cell {
-    border: 5px;
-    border-style: solid;
-    border-color: grey;
-    height: 190px;
-    width: 190px;
-    background-color: rgba(190, 190, 190, 0.7);
-}
