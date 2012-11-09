@@ -1,5 +1,6 @@
 #scene {
-    margin-left: 200px;
+    margin-top: -100px;
+    margin-left: 400px;
     -webkit-perspective: 1200;
     -webkit-perspective-origin: 80% -100px;
 }
@@ -49,5 +50,29 @@
 .bottom {
     -webkit-transform: rotateX(90deg);
     -webkit-transform-origin: top center;
+}
+
+#grid {
+    position: relative;
+    margin: 0 auto;
+    height: 800px;
+    width: 800px;
+    z-index: -1;
+    -webkit-transition: -webkit-transform 1s linear;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translateY(-800px) rotateX(-90deg);
+}
+
+.row {
+    float: left;
+}
+
+.cell {
+    border: 5px;
+    border-style: solid;
+    border-color: grey;
+    height: 190px;
+    width: 190px;
+    background-color: rgba(190, 190, 190, 0.7);
 }
 
