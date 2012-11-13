@@ -1,6 +1,5 @@
 #scene {
-    margin-top: -100px;
-    margin-left: 400px;
+    margin-left: 200px;
     -webkit-perspective: 1200;
     -webkit-perspective-origin: 80% -100px;
 }
@@ -8,8 +7,8 @@
 #cube {
     position: relative;
     margin: 0 auto;
-    height: 800px;
-    width: 800px;
+    height: 400px;
+    width: 400px;
     -webkit-transition: -webkit-transform 1s linear;
     -webkit-transform-style: preserve-3d;
 }
@@ -17,11 +16,11 @@
 .face {
     display: inline;
     float: left;
-    border: 5px;
+    border: 2px;
     border-style: solid;
     border-color: black;
-    height: 190px;
-    width: 190px;
+    height: 96px;
+    width: 96px;
     background-color: rgba(200, 10, 190, 0.4);
 }
 
@@ -39,7 +38,7 @@
     -webkit-transform-origin: center left;
 }
 .front {
-    -webkit-transform: translateX(-400px) translateZ(200px);
+    -webkit-transform: translateX(-200px) translateZ(100px);
 }
 
 .top {
@@ -55,12 +54,12 @@
 #grid {
     position: relative;
     margin: 0 auto;
-    height: 800px;
-    width: 800px;
+    height: 400px;
+    width: 400px;
     z-index: -1;
     -webkit-transition: -webkit-transform 1s linear;
     -webkit-transform-style: preserve-3d;
-    -webkit-transform: translateY(-800px) rotateX(-90deg);
+    -webkit-transform: translateY(-400px) rotateX(-90deg);
 }
 
 .row {
@@ -68,11 +67,10 @@
 }
 
 .cell {
-    border: 5px;
+    border: 2px;
     border-style: solid;
     border-color: grey;
-    height: 190px;
-    width: 190px;
+    height: 96px;
+    width: 96px;
     background-color: rgba(190, 190, 190, 0.7);
 }
-
